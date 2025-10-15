@@ -1,0 +1,218 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 06 Mar 2024 18:46:55 GMT
+ */
+
+:root {
+  --sd-color-teal: #00bcb4;
+  --sd-color-orange: #ff8200;
+  --sd-color-black: #000;
+  --sd-color-white: #fff;
+  --sd-color-red: #dc3545;
+  --sd-color-blue: #3b8dde;
+  --sd-color-green: #05ce7c;
+  --sd-color-magenta: #ee44bc;
+  --sd-color-yellow: #fdcd43;
+  --sd-color-light-gray:#F7F7F8;
+  --sd-color-neutral-20: #f2f2f3;
+  --sd-color-neutral-35: #cbcdcd;
+  --sd-color-neutral-50: #a4a7a8;
+  --sd-color-neutral-65: #7d8182;
+  --sd-color-neutral-80: #575a5b;
+  --sd-color-neutral-95: #323434;
+  --sd-color-primary: #000;
+  --sd-color-secondary: #fff;
+  --sd-color-accent-1: #00bcb4;
+  --sd-color-accent-2: #ff8200;
+  --sd-color-feedback-error: #dc3545;
+  --sd-color-required: var(--sd-color-red);
+  --sd-color-feedback-info: #3b8dde;
+  --sd-color-feedback-success: #05ce7c;
+  --sd-color-background-light: #fff;
+  --sd-color-background-medium: #f2f2f3;
+  --sd-color-background-dark: #323434;
+  --sd-color-background-darkest: #000;
+  --sd-color-background-accent: #00bcb5;
+  --sd-font-color-primary: #000;
+  --sd-font-color-primary-on-dark: #fff;
+  --sd-font-color-secondary: #575a5b;
+  --sd-font-color-secondary-on-dark: #cbcdcd;
+  --sd-font-color-primary-on-accent: #fff;
+  --sd-font-family-din: DIN;
+  --sd-font-size-font-size-0: 0px;
+  --sd-font-size-62: 10px;
+  --sd-font-size-81:13px;
+  --sd-font-size-100: 16px;
+  --sd-font-size-125: 18px;
+  --sd-font-size-150: 24px;
+  --sd-font-size-175: 28px;
+  --sd-font-size-225: 36px;
+  --sd-font-size-300: 48px;
+  --sd-font-size-325: 52px;
+  --sd-font-size-450: 72px;
+  --sd-font-size-575: 92px;
+  --sd-font-char-space-normal: 0;
+  --sd-font-char-space-1x: 0.025;
+  --sd-font-char-space-2x: 0.05;
+  --sd-font-char-space-3x: 0.075;
+  --sd-font-char-space-extended: 0.1;
+  --sd-font-line-height-normal: 1;
+  --sd-line-height-1x: 1.125;
+  --sd-line-height-2x: 1.25;
+  --sd-line-height-4x: 1.5;
+  --sd-line-height-6x: 1.75;
+  --sd-line-height-16x: 2;
+  --sd-line-height-20x: 2.5;
+/**
+* *************************************************************************
+ANIMATION
+* *************************************************************************
+*/
+  --sd-space-quarter-x: 2px;
+  --sd-space-half-x: 4px;
+  --sd-space-one-x: 8px;
+  --sd-space-one-and-a-quarter-x: 10px;
+  --sd-space-one-and-a-half-x: 12px;
+  --sd-space-two-x: 16px;
+  --sd-space-two-and-a-half-x: 20px;
+  --sd-space-three-x: 25px;
+  --sd-space-four-x: 32px;
+  --sd-space-five-x: 40px;
+  --sd-space-six-x: 48px;
+  --sd-space-eight-x: 64px;
+  --sd-space-five-x: 80px;
+  --sd-space-twelve-x: 96px;
+  --sd-space-sixteenth-x: 128px;
+  --sd-light: 300;
+  --sd-medium: 500;
+  --sd-1x: 5px;
+  --sd-condensed-medium: Cond Medium;
+  /* border witdth */
+  --sd-border-thin: 1px;
+  /* Icon Sizes */
+  --sd-icon-size-1x: 10px;
+  /* Aliases */
+
+  --main-nav-color: var(--sd-color-white);
+  --main-nav-background: var(--sd-color-black);
+  --main-nav-color: var(--sd-color-white);
+  /*%% Icon nav colors */
+  --main-nav-hover-color: var(--sd-color-teal);
+
+  /* Surfaces */
+  --sd-surface-light: var(--sd-color-white);
+  --sd-surface-neutral: #f7f7f8;
+  /* --sd-surface-dark: var(--sd-color-neutral-95); */
+  --sd-surface-dark: #202020;
+  --sd-surface-darkest: var(--sd-color-black);
+  /* section padding */
+  --sd-section-padding: 80px;
+  /* FONT Colors */
+  --sd-text-color: var(--sd-color-neutral-80);
+  --sd-text-emphasis: var(--sd-color-black);
+  --sd-text-understate: var(--sd-color-neutral-50);
+  --sd-text-accent: var(--sd-color-teal);
+  /* Font Colors on black */
+  --sd-text-color-on-dark: #c5c5c4;
+  --sd-text-emphasis-on-dark: var(--sd-color-white);
+  --sd-text-understate-on-dark: var(--sd-color-neutral-80);
+  --sd-text-accent-on-dark: var(--sd-color-teal);
+  /* button colors */
+  --sd-button-border-color: var(--sd-color-black);
+  --sd-button-label-color: var(--sd-color-white);
+  --sd-button-background-color: var(--sd-color-black);
+  --sd-button-background-hover-color: var(--sd-color-teal);
+  --sd-button-border-hover-color: var(--sd-color-teal);
+  --sd-button-label-hover-color: var(--sd-color-white);
+  /* ghost button */
+  --sd-button-ghost-background-color: transparent;
+  --sd-button-ghost-label-color: var(--sd-color-black);
+  --sd-button-ghost-border-color: var(--sd-color-black);
+  --sd-button-ghost-background-hover-color: var(--sd-color-black);
+  --sd-button-ghost-label-hover-color: var(--sd-color-white);
+
+  /* FONT FAMILIES */
+  /* --sd-brand-font: var(--sd-brand-font); */
+  /* Industry colors */
+
+  /* Added by hand, please reveiw */
+  --sd-border-radius: 10px;
+  --sd-color-grey: #8a8c8c;
+/* updaet to match Category keys */
+  --accent-color: var(--sd-color-teal);
+  --accent-customer-stories: var(--sd-color-yellow);
+  --accent-events: var(--sd-color-magenta);
+  --accent-industry-perspectives: var(--sd-color-orange);
+  --accent-company-news: var(--sd-color-grey);
+  --accent-success-and-learning: var(--sd-color-blue);
+  --accent-product-updates: var(--sd-color-teal);
+/* categories */
+
+
+  /* default  */
+  --sd-text-color: #575756;
+  /* needs review */
+  --shadow-color: hsla(215, 26%, 48%, 0.2);
+  --tab-bg: #fdfdfd;
+  /* pill Controller */
+  --pill-border-color:var( --sd-color-black);
+  --pill-text-color:var(--sd-color-black);
+
+
+/**
+* *************************************************************************
+ANIMATION
+* *************************************************************************
+*/
+
+  --sd-animation-speed-insant: 0;
+  --sd-animation-speed-fast: 0.25s;
+  --sd-animation-speed-normal: 0.5s;
+  --sd-animation-speed-slow: 1s; 
+
+  --sd-animation-ease:cubic-bezier(0, 0, 0.58, 1);
+  
+
+
+}
+
+@media (--medium) {
+  :root {
+    --sd-section-padding: 125px;
+  }
+}
+
+:root {
+  --page-accent-color: var(--accent-color);
+  --heroBlur: 33px;
+  --heroBrightness: 0.55;
+}
+/* page styles with colors */
+.customer-stories {
+  --page-accent-color: var(--accent-customer-stories);
+  --heroBlur: 0;
+  --heroBrightness: 1;
+}
+
+
+
+
+.company-news,.company_news  {
+  --page-accent-color: var(--accent-company-news);
+}
+.product-updates, .product_updates {
+  --page-accent-color: var(--accent-product-updates);
+}
+.events {
+  --page-accent-color: var(--accent-events);
+}
+.industry-perspectives, .industry_perspectives {
+  --page-accent-color: var(--accent-industry-perspectives);
+}
+.success-and-learning, .success_and_learning {
+  --page-accent-color: var(--accent-success-learning);
+}
+ 
+
+
+

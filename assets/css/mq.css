@@ -1,0 +1,19 @@
+/* media queries */
+/* phone max */
+@custom-media --x-small (575px>=width);
+/* big phone min */
+@custom-media --small (576px<=width);
+/* phone landscape max */
+@custom-media --small-max (767px>=width);
+/* tablet min */
+@custom-media --medium (768px <= width);
+/* tablet max */
+@custom-media --medium-max (991px>=width);
+/* landscape tablet min */
+@custom-media --large (992px <= width);
+/* desktop tablet min */
+@custom-media --extra-large (1200px <= width);
+
+/* special queries */
+
+@custom-media --nav-links (992px<=width <= 1200px);

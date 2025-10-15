@@ -1,0 +1,112 @@
+/*! CSS Used from: https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css */
+@media print{
+    *,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+    blockquote{border:1px solid #999;page-break-inside:avoid;}
+    img{page-break-inside:avoid;}
+    p{orphans:3;widows:3;}
+}
+*,::after,::before{box-sizing:border-box;}
+p{margin-top:0;margin-bottom:1rem;}
+blockquote{margin:0 0 1rem;}
+img{vertical-align:middle;border-style:none;}
+.blockquote{margin-bottom:1rem;font-size:1.25rem;}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width:576px){
+    .container{max-width:540px;}
+}
+@media (min-width:768px){
+    .container{max-width:720px;}
+}
+@media (min-width:992px){
+    .container{max-width:960px;}
+}
+@media (min-width:1200px){
+    .container{max-width:1140px;}
+}
+.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+.col-12,.col-md-10{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+.col-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
+@media (min-width:768px){
+    .col-md-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}
+    .offset-md-1{margin-left:8.333333%;}
+}
+/*! CSS Used from: https://timbercms-staging.vectorworks.net/assets/VW2021/css/styles.css?id=060c81f387d81728ca5c */
+*{margin:0;padding:0;}
+::selection{color:#fff;background:#000;}
+[class*=" ico-"]{font-family:'ico-vw'!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.ico{position:relative;}
+.ico:before{font-family:'ico-vw'!important;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.ico-quotes:before{content:"\E924";}
+.container{max-width:1140px;}
+p{font-family:"DIN-Lt", Arial, sans-serif;font-weight:normal;font-size:16px;line-height:1.75;text-transform:none;color:#575756;letter-spacing:0.01em;margin:7px 0 25px;text-align:left;text-indent:0;}
+p:last-child{margin-bottom:0;}
+p:empty{display:none;}
+img{width:100%;}
+.section{margin-top:80px;margin-bottom:80px;}
+@media screen and (min-width:992px){
+    .section{margin-top:125px;margin-bottom:125px;}
+}
+@media screen and (max-width:575px){
+    p{font-size:16px;line-height:1.5;}
+    .container{max-width:100%;}
+}
+.ico-quotes{font-size:44px;color:#00bcb4;margin-bottom:20px;display:block;}
+blockquote .blockquote-text{font-family:"DIN-Cond", Arial, sans-serif;font-weight:normal;font-size:29px;line-height:1.5;text-transform:none;color:#000000;letter-spacing:0;margin:0;text-align:left;text-indent:0;letter-spacing:0.01em;}
+blockquote .blockquote-author{font-family:"DIN", Arial, sans-serif;font-weight:normal;font-size:14px;line-height:1.5;text-transform:none;color:#000000;letter-spacing:0;margin:0;text-align:left;text-indent:0;text-transform:uppercase;letter-spacing:1px;}
+blockquote.blockquote__headshot img{width:84px;clip-path:circle(42px at center);-webkit-clip-path:circle(42px at center);margin:25px 0;}
+.quote-full{text-align:center;}
+.quote-full .blockquote-text,.quote-full .blockquote-author{text-align:center;}
+@media screen and (max-width:767px){
+    blockquote .blockquote-text{font-size:24px;text-align:center;}
+    blockquote .blockquote-author{font-size:12px;text-align:center;}
+}
+@media screen and (max-width:575px){
+    blockquote .blockquote-text{font-size:20px;}
+    blockquote .blockquote-author{font-size:11px;}
+    .ico-quotes{font-size:34px;}
+}
+.customer-story .container{margin:70px auto;}
+.customer-story p{text-align:left;}
+@media screen and (max-width:991px){
+    .customer-story blockquote{margin-bottom:25px;}
+    .customer-story .quote-full .blockquote{margin-bottom:0;}
+}
+@media screen and (max-width:767px){
+    .customer-story .container{margin:40px auto;}
+}
+.article--product-updates .ico-quotes{color:#00BCB4!important;}
+.articles .container{margin:0 auto;}
+@media screen and (min-width:768px){
+    .articles .container{max-width:1110px;}
+}
+/*! CSS Used fontfaces */
+@font-face{font-display:block;font-family:ico-vw;font-style:normal;font-weight:400;src:url(https://customers.vectorworks.net/static/fonts/ico-vw.eot?ojwmzm);src:url(https://customers.vectorworks.net/static/fonts/ico-vw.eot?ojwmzm#iefix) format("embedded-opentype"),url(https://customers.vectorworks.net/static/fonts/ico-vw.ttf?ojwmzm) format("truetype"),url(https://customers.vectorworks.net/static/fonts/ico-vw.woff?ojwmzm) format("woff"),url(https://customers.vectorworks.net/static/fonts/ico-vw.svg?ojwmzm#ico-vw) format("svg");}
+@font-face{font-family:'ico-vw';src:url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.eot?xahyof');src:url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.eot?xahyof#iefix') format('embedded-opentype'), url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.ttf?xahyof') format('truetype'), url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.woff?xahyof') format('woff'), url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.woff2?xahyof') format('woff2'), url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.svg?xahyof#ico-vw') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:"DIN-Lt";src:url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Light/1d02ce13-aafd-4c16-8182-09c3da13b4aa.eot?#iefix");src:url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Light/1d02ce13-aafd-4c16-8182-09c3da13b4aa.eot?#iefix") format("eot"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Light/e259563d-7c59-40c9-999d-11259f239777.woff2") format("woff2"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Light/12fdfba0-a41d-4419-8dcf-522291a23af2.woff") format("woff"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Light/29d75aac-ff34-429b-8d02-eca27f239530.ttf") format("truetype");}
+@font-face{font-family:"DIN-Cond";src:url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Cond/92b9d4a1-9ae3-40f0-928c-0e31c6bc3189.eot?#iefix");src:url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Cond/92b9d4a1-9ae3-40f0-928c-0e31c6bc3189.eot?#iefix") format("eot"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Cond/6159dda7-8634-4aa8-a515-4b1a1d9559cb.woff2") format("woff2"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Cond/e59598a2-53d0-4028-847d-b37faee6772f.woff") format("woff"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Cond/0e7aad7a-314e-4575-a1c8-a8bf6cfa0888.ttf") format("truetype");}
+@font-face{font-family:DIN;font-style:normal;font-weight:400;src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Regular.eot?4hash3);src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Regular.eot?4hash3#iefix) format("embedded-opentype"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Regular.woff?4hash3) format("woff"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Regular.ttf?4hash3) format("truetype");}
+@font-face{font-family:DIN;font-style:normal;font-weight:700;src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Med.eot);src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Med.eot?#iefix) format("embedded-opentype"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Med.woff) format("woff"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Med.ttf) format("truetype");}
+@font-face{font-family:DIN;font-style:normal;font-weight:300;src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Light.eot);src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Light.eot?#iefix) format("embedded-opentype"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Light.woff) format("woff"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Light.ttf) format("truetype");}
+@font-face{font-family:"DIN";src:url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Reg/5eb0af6c-78f3-4b41-a963-221e4bbae0a3.eot?#iefix");src:url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Reg/5eb0af6c-78f3-4b41-a963-221e4bbae0a3.eot?#iefix") format("eot"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Reg/89495911-441c-4a94-b785-8fbbde758233.woff2") format("woff2"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Reg/27e61977-1c85-4892-b030-9d3339639298.woff") format("woff"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Reg/38c9d500-4abf-4486-a088-30b4c9233d29.ttf") format("truetype");}
+
+
+
+
+/*! CSS Used from: https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css */
+@media print{
+    *,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+}
+*,::after,::before{box-sizing:border-box;}
+hr{box-sizing:content-box;height:0;overflow:visible;}
+hr{margin-top:1rem;margin-bottom:1rem;border:0;border-top:1px solid rgba(0,0,0,.1);}
+/*! CSS Used from: https://timbercms-staging.vectorworks.net/assets/VW2021/css/styles.css?id=060c81f387d81728ca5c */
+*{margin:0;padding:0;}
+::selection{color:#fff;background:#000;}
+hr{margin-top:0;}
+hr.small-hr{background-color:#00bcb4;height:3px;width:37px;margin:5px 0;border:0;}
+.quote-full .small-hr{margin:25px auto 12px;}
+.customer-story blockquote hr{background-color:#00bcb4;margin:25px 0 12px;}
+@media screen and (max-width:991px){
+    .customer-story blockquote .small-hr{margin-left:auto;margin-right:auto;}
+}
+.article--product-updates blockquote hr{background-color:#00BCB4!important;}

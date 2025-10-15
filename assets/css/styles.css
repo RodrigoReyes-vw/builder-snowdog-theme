@@ -1,0 +1,444 @@
+@import url("./reset.css");
+@import url("./fonts.css");
+@import url("./variables.css");
+@import url("./text-styles.css");
+@import url("./layout.css");
+@import url("./buttons.css");
+@import url("./forms.css");
+/* @import url("./main-content.css"); */
+/* @import url("./media-grid.css"); */
+/* @import url("./quote-single.css"); */
+@import url("./accordion.css");
+@import url("./table.css");
+@import url("./lists.css");
+@import url("./utilities.css");
+@view-transition {
+	navigation: auto;
+}
+:root {
+  --lighter: #f0f0f0;
+  --dark: #213555;
+  --blue-l: #4f709c;
+  --corners: 1.5rem;
+  background-color: white;
+  /* gap */
+  --col-gutter: 15px;
+  --brand-font: "Barlow",sans-serif;
+  --brand-font-condensed: "Barlow Condensed",sans-serif;
+  @media (--medium) {
+    --col-gutter: 20px;
+  }
+    @media (--large) {
+    --col-gutter: 30px;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  background-color: white;
+  color: var(--dark);
+  font-family: var(--brand-font);
+
+  color: var(--sd-text-color);
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+ 
+}
+main {
+  overflow-x: hidden;
+}
+
+/* transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.ant-drawer {
+  z-index: 1000;
+}
+
+.ant-dropdown {
+    z-index: 10002;
+}
+
+.ant-drawer-body {
+  padding-bottom: 100px !important;
+}
+
+.ant-btn-link,
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: black;
+}
+
+/* move to utulities */
+.sd-util-condensed {
+  font-family: var(--brand-font-condensed);
+}
+.sd-util-bold {
+  font-weight: 500 !important;
+}
+.ant-pagination > li {
+  &:before {
+    display: none;
+  }
+}
+.dragArea > .list-group-item {
+  min-height: 50px;
+}
+
+/* move to components */
+
+.noScroll {
+  overflow: hidden !important;
+}
+
+/* Modal transitions */
+/* transitions */
+.modal-enter-active,
+.modal-leave-active {
+  z-index: 50000;
+  transition: all 0.5s ease;
+  position: fixed;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  position: fixed;
+  z-index: 50000;
+  opacity: 0;
+  /* transform: scale(1.1); */
+  /* transform: translateY(-100px); */
+}
+
+
+.pop-enter-active,
+.pop-leave-active {
+
+  transition:  opacity 1s linear;
+}
+
+.pop-enter,
+.pop-leave-to {
+  opacity: 0;
+  transform: scale(0.3) translateY(-50%);
+}
+/* utlility classes */
+ .sd-util-show-on-large {
+      display: none!important;
+    }
+
+  @media (--large) {
+   .sd-util-hide-from-large {
+      display: none!important;
+    }
+     .sd-util-show-on-large {
+      display: block!important;
+    }
+  }
+
+
+/* Notifications */
+.global-promo-bar .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width:576px){
+  .global-promo-bar .container{max-width:540px;}
+}
+@media (min-width:768px){
+  .global-promo-bar .container{max-width:720px;}
+}
+@media (min-width:992px){
+  .global-promo-bar .container{max-width:960px;}
+}
+@media (min-width:1200px){
+  .global-promo-bar .container{max-width:1140px;}
+}
+.global-promo-bar .text-center{text-align:center!important;}
+.global-promo-bar a:focus{border:none;outline:none;}
+[class*=" ico-"]{font-family:'ico-vw'!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.global-promo-bar .ico{position:relative;}
+.global-promo-bar .ico:before{font-family:'ico-vw'!important;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.global-promo-bar .ico-close:before{content:"\e90d";}
+.global-promo-bar .ico-chevron-rt-dbl:before{content:"\e910";}
+.global-promo-bar .container{max-width:1140px;}
+.global-promo-bar p{font-family:"DIN-Lt", Arial, sans-serif;font-weight:normal;font-size:16px;line-height:1.75;text-transform:none;color:#575756;letter-spacing:0.01em;margin:7px 0 25px;text-align:left;text-indent:0;}
+.global-promo-bar a{font-family:"DIN", Arial, sans-serif;font-weight:normal;font-size:inherit;line-height:1.75;text-transform:inherit;color:#000000;letter-spacing:0.025em;margin:0;text-align:left;text-indent:0;text-decoration:underline;}
+@media screen and (max-width:575px){
+  .global-promo-bar .container{max-width:100%;}
+}
+.global-promo-bar{background-color:#00bcb4;color:#ffffff;padding:9px;}
+.global-promo-bar-button{position:absolute;right:20px;top:14px;height:20px;width:20px;background:none;border:0;color:white;font-size:10px;transition:opacity 0.3s ease-in-out;opacity:1;}
+.global-promo-bar-button:hover{opacity:1;}
+@media screen and (max-width:575px){
+  .global-promo-bar-button{right:0;}
+}
+.global-promo-bar p{font-weight:normal;color:#ffffff;line-height:1;padding:0;margin:0;}
+.global-promo-bar span.ico{font-size:14px;}
+.global-promo-bar a{font-family:"DIN-Med", Arial, sans-serif;font-weight:normal;color:#ffffff;text-decoration:none;position:relative;text-transform:uppercase;}
+
+@font-face{font-display:block;font-family:ico-vw;font-style:normal;font-weight:400;src:url(https://customers.vectorworks.net/static/fonts/ico-vw.eot?ojwmzm);src:url(https://customers.vectorworks.net/static/fonts/ico-vw.eot?ojwmzm#iefix) format("embedded-opentype"),url(https://customers.vectorworks.net/static/fonts/ico-vw.ttf?ojwmzm) format("truetype"),url(https://customers.vectorworks.net/static/fonts/ico-vw.woff?ojwmzm) format("woff"),url(https://customers.vectorworks.net/static/fonts/ico-vw.svg?ojwmzm#ico-vw) format("svg");}
+@font-face{font-family:'ico-vw';src:url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.eot?xahyof');src:url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.eot?xahyof#iefix') format('embedded-opentype'), url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.ttf?xahyof') format('truetype'), url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.woff?xahyof') format('woff'), url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.woff2?xahyof') format('woff2'), url('https://download2.vectorworks.net/web/static-assets/fonts/ico-vw-2019/ico-vw.svg?xahyof#ico-vw') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:"DIN-Lt";src:url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Light/1d02ce13-aafd-4c16-8182-09c3da13b4aa.eot?#iefix");src:url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Light/1d02ce13-aafd-4c16-8182-09c3da13b4aa.eot?#iefix") format("eot"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Light/e259563d-7c59-40c9-999d-11259f239777.woff2") format("woff2"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Light/12fdfba0-a41d-4419-8dcf-522291a23af2.woff") format("woff"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Light/29d75aac-ff34-429b-8d02-eca27f239530.ttf") format("truetype");}
+@font-face{font-family:DIN;font-style:normal;font-weight:400;src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Regular.eot?4hash3);src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Regular.eot?4hash3#iefix) format("embedded-opentype"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Regular.woff?4hash3) format("woff"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Regular.ttf?4hash3) format("truetype");}
+@font-face{font-family:DIN;font-style:normal;font-weight:700;src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Med.eot);src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Med.eot?#iefix) format("embedded-opentype"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Med.woff) format("woff"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Med.ttf) format("truetype");}
+@font-face{font-family:DIN;font-style:normal;font-weight:300;src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Light.eot);src:url(https://static.vectorworks.net/common/fonts/DIN/DIN-Light.eot?#iefix) format("embedded-opentype"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Light.woff) format("woff"),url(https://static.vectorworks.net/common/fonts/DIN/DIN-Light.ttf) format("truetype");}
+@font-face{font-family:"DIN";src:url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Reg/5eb0af6c-78f3-4b41-a963-221e4bbae0a3.eot?#iefix");src:url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Reg/5eb0af6c-78f3-4b41-a963-221e4bbae0a3.eot?#iefix") format("eot"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Reg/89495911-441c-4a94-b785-8fbbde758233.woff2") format("woff2"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Reg/27e61977-1c85-4892-b030-9d3339639298.woff") format("woff"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN_Reg/38c9d500-4abf-4486-a088-30b4c9233d29.ttf") format("truetype");}
+@font-face{font-family:"DIN-Med";src:url("https://s3.amazonaws.com/download2.nemetschek.net/web/static-assets/fonts/DIN-Med/din-medium.woff2");src:url("https://download2.vectorworks.net/web/static-assets/fonts/DIN-Med/2faca088-c5cd-4839-8d0d-9114e46a2fa9.eot?#iefix") format("eot"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN-Med/3a97d711-0278-4fcc-9527-37e7911bcfb7.woff2") format("woff2"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN-Med/8491ec80-cec4-4e7a-8c3a-27c0cf767c12.woff") format("woff"), url("https://download2.vectorworks.net/web/static-assets/fonts/DIN-Med/f28d8edb-74fe-471d-b259-11e0398960b9.ttf") format("truetype");}
+
+/*! CSS Used from: https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css */
+@media print{
+  *,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+  a,a:visited{text-decoration:underline;}
+}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width:576px){
+  .container{max-width:540px;}
+}
+@media (min-width:768px){
+  .container{max-width:720px;}
+}
+@media (min-width:992px){
+  .container{max-width:960px;}
+}
+@media (min-width:1200px){
+  .container{max-width:1140px;}
+}
+/*! CSS Used from: https://www.vectorworks.net/cached/themes/vectorworks_redesign_2018/assets/css/styles.css?id=bc4c9b33e99983e07020 */
+[class*=" ico-"]{font-family:'ico-vw'!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.ico{position:relative;}
+.ico:before{font-family:'ico-vw'!important;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.ico-chevron-rt-dbl:before{content:"\e910";}
+.container{max-width:1140px;}
+@media screen and (max-width:575px){
+  .container{max-width:100%;}
+}
+.hello-bar{background-color:#00bcb4;z-index:300;}
+.hello-bar .container{text-align:center;}
+.hello-bar span{padding:25px 20px;font-family:"DIN-Lt", Arial, sans-serif;font-weight:normal;font-size:18px;line-height:1.5;text-transform:uppercase;color:#ffffff;letter-spacing:0.025em;margin:0;text-align:center;text-indent:0;display:block;}
+.hello-bar span.ico{display:inline-block;padding:0;margin-left:7px;font-size:14px;}
+.hello-bar a:not(.vw-btn){text-decoration:none;color:#ffffff;font-family:"DIN-Lt", Arial, sans-serif;font-weight:normal;line-height:1.5;}
+.hello-bar a:not(.vw-btn):hover{text-decoration:underline;}
+@media screen and (min-width:992px){
+  .hello-bar{top:auto;left:auto;bottom:0;right:auto;width:100%;background-color:rgba(0, 188, 180, 0.9);}
+}
+
+/* Modal */
+
+/*! CSS Used from: https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css */
+@media print{
+  *,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+  img{page-break-inside:avoid;}
+}
+button{-ms-touch-action:manipulation;touch-action:manipulation;}
+button{border-radius:0;}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
+button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+button{overflow:visible;}
+button{text-transform:none;}
+button,html [type=button]{-webkit-appearance:button;}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width:576px){
+  .container{max-width:540px;}
+}
+@media (min-width:768px){
+  .container{max-width:720px;}
+}
+@media (min-width:992px){
+  .container{max-width:960px;}
+}
+@media (min-width:1200px){
+  .container{max-width:1140px;}
+}
+.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+.fade{opacity:0;transition:opacity .15s linear;}
+.close{float:right;font-size:1.5rem;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.5;}
+.close:focus,.close:hover{color:#000;text-decoration:none;opacity:.75;}
+button.close{padding:0;background:0 0;border:0;-webkit-appearance:none;}
+.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:20000;display:none;overflow:hidden;outline:0;}
+.modal.fade .modal-dialog{transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out;transition:transform .3s ease-out,-webkit-transform .3s ease-out;-webkit-transform:translate(0,-25%);transform:translate(0,-25%);}
+.modal-dialog{position:relative;width:auto;margin:10px;pointer-events:none;}
+.modal-content{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;pointer-events:auto;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);border-radius:.3rem;outline:0;}
+@media (min-width:576px){
+  .modal-dialog{max-width:500px;margin:30px auto;}
+}
+/*! CSS Used from: https://www.vectorworks.net/cached/themes/vectorworks_redesign_2018/assets/css/styles-cb0b2ad740.css?v=20240522 */
+button{cursor:pointer;}
+button:focus{outline:none;}
+::selection{color:#fff;background:#000;}
+[class*=" ico-"]{font-family:'ico-vw'!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.ico{position:relative;}
+.ico:before{font-family:'ico-vw'!important;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.ico-close-circ-fill:before{content:"\e90f";}
+.container{max-width:1140px;}
+.container-fluid{max-width:1800px;}
+img{width:100%;}
+@media screen and (max-width:575px){
+  .container{max-width:100%;}
+}
+.vw-modal .close{font-family:"DIN", Arial, sans-serif;font-weight:400;font-size:14px;line-height:1.5;text-transform:uppercase;color:#ffffff;letter-spacing:0.7px;margin:0;text-align:center;text-indent:0;width:100%;text-shadow:none;opacity:1;position:-webkit-sticky;position:sticky;top:20px;z-index:5000;}
+.vw-modal .close span{width:32px;height:32px;}
+.vw-modal .close .ico{color:#000000;padding:0;font-size:32px;display:block;position:relative;top:auto;left:auto;bottom:auto;right:auto;transition:all 0.5s;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;}
+.vw-modal .close:hover .ico{color:rgba(0, 0, 0, 0.75);}
+.vw-modal .modal-dialog{max-width:100%;margin-top:0;padding-left:30px;padding-right:30px;height:100%;position:absolute;top:0;width:100%;}
+.vw-modal .modal-dialog .load-txt{display:block;text-align:center;position:absolute;top:45%;left:0;bottom:auto;right:auto;width:100%;}
+.vw-modal .modal-content{border-radius:0;padding-top:65px;padding-bottom:100px;height:inherit;overflow:hidden;min-height:100%;}
+@media screen and (max-width:575px){
+  .vw-modal .modal-dialog{padding:0;margin:0;}
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+  .vw-modal .close{margin:0 0 0 -16px;width:34px;position:fixed;left:50%;}
+  .vw-modal .modal-dialog{top:auto;}
+  .vw-modal .modal-content{padding-top:80px;}
+}
+
+/*! CSS Used from: https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css */
+@media print{
+  *,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+}
+*,::after,::before{box-sizing:border-box;}
+[tabindex="-1"]:focus{outline:0!important;}
+button{-ms-touch-action:manipulation;touch-action:manipulation;}
+button{border-radius:0;}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
+button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+button{overflow:visible;}
+button{text-transform:none;}
+button,html [type=button]{-webkit-appearance:button;}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width:576px){
+  .container{max-width:540px;}
+}
+@media (min-width:768px){
+  .container{max-width:720px;}
+}
+@media (min-width:992px){
+  .container{max-width:960px;}
+}
+@media (min-width:1200px){
+  .container{max-width:1140px;}
+}
+.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+.fade{opacity:0;transition:opacity .15s linear;}
+.fade.show{opacity:1;}
+.close{float:right;font-size:1.5rem;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.5;}
+.close:focus,.close:hover{color:#000;text-decoration:none;opacity:.75;}
+button.close{padding:0;background:0 0;border:0;-webkit-appearance:none;}
+.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:20000;overflow:hidden;outline:0;}
+.modal.fade .modal-dialog{transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out;transition:transform .3s ease-out,-webkit-transform .3s ease-out;-webkit-transform:translate(0,-25%);transform:translate(0,-25%);}
+.modal.show .modal-dialog{-webkit-transform:translate(0,0);transform:translate(0,0);}
+.modal-open .modal{overflow-x:hidden;overflow-y:auto;}
+.modal-dialog{position:relative;width:auto;margin:10px;pointer-events:none;}
+.modal-content{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;pointer-events:auto;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);border-radius:.3rem;outline:0;}
+@media (min-width:576px){
+  .modal-dialog{max-width:500px;margin:30px auto;}
+}
+/*! CSS Used from: https://www.vectorworks.net/cached/themes/vectorworks_redesign_2018/assets/css/styles-cb0b2ad740.css?v=20240522 */
+.ico{position:relative;}
+.ico:before{font-family:'ico-vw'!important;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.ico-close-circ-fill:before{content:"\e90f";}
+.container{max-width:1140px;}
+.container-fluid{max-width:1800px;}
+@media screen and (max-width:575px){
+  .container{max-width:100%;}
+}
+.vw-modal .close{font-family:"DIN", Arial, sans-serif;font-weight:400;font-size:14px;line-height:1.5;text-transform:uppercase;color:#ffffff;letter-spacing:0.7px;margin:0;text-align:center;text-indent:0;width:100%;text-shadow:none;opacity:1;position:-webkit-sticky;position:sticky;top:20px;z-index:5000;}
+.vw-modal .close span{width:32px;height:32px;}
+.vw-modal .close .ico{color:#000000;padding:0;font-size:32px;display:block;position:relative;top:auto;left:auto;bottom:auto;right:auto;transition:all 0.5s;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;}
+.vw-modal .close:hover .ico{color:rgba(0, 0, 0, 0.75);}
+.vw-modal .modal-dialog{max-width:100%;margin-top:0;padding-left:30px;padding-right:30px;height:100%;position:absolute;top:0;width:100%;}
+.vw-modal .modal-content{border-radius:0;padding-top:65px;padding-bottom:100px;height:inherit;overflow:hidden;min-height:100%;}
+.vw-modal--small{display:flex;}
+.vw-modal--small .modal-dialog{display:flex;justify-content:center;align-items:flex-start;}
+.vw-modal--small .modal-content{min-width:300px;width:auto;height:auto!important;min-height:auto!important;max-width:500px;padding:75px 25px 40px;}
+@media screen and (max-width:575px){
+  .vw-modal .modal-dialog{padding:0;margin:0;}
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+  .vw-modal .close{margin:0 0 0 -16px;width:34px;position:fixed;left:50%;}
+  .vw-modal .modal-dialog{top:auto;}
+  .vw-modal .modal-content{padding-top:80px;}
+}
+
+/* shopping cart Icon I think */
+
+
+.shopping-bag-icon-cont--is-full > .icon-bag {
+  fill: #000000;
+  stroke: #00bcb4;
+}
+
+.shopping-bag-icon-cont--is-full .icon-bag .handle {
+  fill: #000000;
+  stroke: #00bcb4!important;
+}
+
+.shopping-bag-icon-cont--is-full  .icon-bag > .bag-pocket {
+  fill: #00bcb4!important;
+  stroke: #00bcb4!important;
+}
+
+.shopping-bag-icon-cont .icon-bag .bag-pocket {
+  fill: #000000;
+  stroke: #ffffff;
+  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+}
+.shopping-bag-icon-cont--is-full .icon-bubble {
+  opacity: 1!important;
+  color:black!important;
+}
+
+
+/* shopping cart Icon I think */
+
+
+.shopping-bag-icon-cont--is-full > .icon-bag {
+    fill: #000000;
+    stroke: #00bcb4;
+}
+
+.shopping-bag-icon-cont--is-full  .icon-bag > .bag-pocket {
+    fill: #00bcb4!important;
+    stroke: #00bcb4!important;
+}
+
+.shopping-bag-icon-cont .icon-bag .bag-pocket {
+    fill: #000000;
+    stroke: #ffffff!impo;
+    transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+}
+.shopping-bag-icon-cont--is-full .icon-bubble {
+    opacity: 1;
+    color:black!important;
+}
+
+
+
+/* other transitions */
+/* Modal transitions */
+/* transitions */
+.fade-enter-active,
+.fade-leave-active {
+
+  transition: all 0.5s ease;
+
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  transition: all 0.5s ease;
+  opacity: 0;
+  /* transform: scale(1.1); */
+  /* transform: translateY(-100px); */
+}
+
+
+button.btn.btn-basket-icon.vw-basket-icon-close.vw-basket-close {
+    box-shadow: none!important;
+}
