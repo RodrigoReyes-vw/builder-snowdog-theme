@@ -8,6 +8,7 @@ const meta = {
   title: "Snow Dog /Button test 🐺",
 
   component: SDButton,
+  
   tags: ["autodocs"],
 } satisfies Meta<typeof SDButton>;
 
@@ -29,6 +30,7 @@ export const Secondary: Story = {
   },
 };
 export const OnDark: Story = {
+  decorators: [() => ({ template: '<div class="sd-page-section sd-surface-darkest"><story /></div>' })],
   args: {
     label: "Hello World",
     onDark: true,
