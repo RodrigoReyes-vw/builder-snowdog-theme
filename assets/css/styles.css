@@ -23,8 +23,7 @@
   background-color: white;
   /* gap */
   --col-gutter: 15px;
-  --brand-font: "Barlow",sans-serif;
-  --brand-font-condensed: "Barlow Condensed",sans-serif;
+  --brand-font: "DIN",sans-serif;
   @media (--medium) {
     --col-gutter: 20px;
   }
@@ -81,7 +80,7 @@ main {
 
 /* move to utulities */
 .sd-util-condensed {
-  font-family: var(--brand-font-condensed);
+  font-stretch: condensed !important;
 }
 .sd-util-bold {
   font-weight: 500 !important;

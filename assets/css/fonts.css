@@ -1,43 +1,37 @@
 @font-face {
-  font-family: "Barlow Condensed";
-  font-weight: 400;
-  src: url("/fonts/barlow/BarlowCondensed-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Barlow Condensed";
+  font-family: "DIN";
+  font-stretch: condensed;
   font-weight: 500;
-  src: url("/fonts/barlow/BarlowCondensed-Medium.ttf") format("truetype");
+  src: url("/fonts/din-cond-med.woff2") format("woff2");
 }
-
-
 @font-face {
-  font-family: "Barlow";
+  font-family: "DIN";
   font-weight: 300;
-  src: url("/fonts/barlow/Barlow-Light.ttf") format("truetype");
+  src: url("/fonts/din-light.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Barlow";
+  font-family: "DIN";
   font-weight: 400;
-  src: url("/fonts/barlow/Barlow-Regular.ttf") format("truetype");
+  src: url("/fonts/din.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Barlow";
+  font-family: "DIN";
   font-weight: 500;
-  src: url("/fonts/barlow/Barlow-Medium.ttf") format("truetype");
+  src: url("/fonts/din-medium.woff2");
 }
 
+@font-face {
+  font-family: "DIN";
+  font-weight: 400;
+  font-stretch: condensed;
+  src: url("/fonts/din-cond.woff2") format("woff2");
+}
 
 @font-face {
-  font-family: "Barlow";
+  font-family: "DIN";
   font-weight: 400;
   font-style: italic;
-  src: url("/fonts/barlow/Barlow-Italic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  font-weight: 300;
-  src: url("/fonts/barlow/BarlowCondensed-Medium.ttf") format("truetype");
+  src: url("/fonts/din-italic.woff2") format("woff2");
 }
