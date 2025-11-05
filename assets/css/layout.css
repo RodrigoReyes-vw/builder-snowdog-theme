@@ -316,7 +316,7 @@ div:has(.sd-surface-light)+div:has(.sd-surface-light)>.sd-surface-light
 }
 @media (--large) {
 
-  .left,.reversibleGrid {
+  .left, .reversibleGrid {
 
     grid-template-areas: "media media media media media media . controls controls controls controls controls ";
     --_grid-gap:30px;

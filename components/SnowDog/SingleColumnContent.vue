@@ -54,6 +54,7 @@ const headingId = computed(() => {
 </script>
 
 <template>
+
   <div :class="[$style.singleColumn, componentAlignment, componentH]">
   
     <div  :class="[$style.container]">

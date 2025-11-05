@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { boolean } from 'zod';
 
 const props = defineProps({
   media: {
@@ -7,7 +6,7 @@ const props = defineProps({
     required: true,
   },
   isRounded: {
-    type: boolean,
+    type: Boolean,
     default:true
   }
 });
@@ -36,12 +35,12 @@ const formatUrl = (url) => {
     loading="lazy"
     :class="[{[$style.roundCorners ]: isRounded}]"
   />
-  <ResponsiveVideo
+  <!-- <ResponsiveVideo
   :key="media.url"
     v-else
     :videoURL="Array.isArray(media) ? media[0].url : (media?.url ?? '')"
     :class="[{[$style.roundCorners ]: isRounded}]"
-  />
+  /> -->
 </template>
 <style module>
 .container {

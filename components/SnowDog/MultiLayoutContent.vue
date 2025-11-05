@@ -12,12 +12,15 @@ const modalOpen = ref(false);
 const componentH = computed(() => {
   return style[props.block.height]
 })
+import PageSection from "./PageSection.vue";
+import AppInlineMedia from "./AppInlineMedia.vue";
+import SingleColumnContent from "./SingleColumnContent.vue";
 
 
 </script>
 
 <template>
-  <BlocksBaseBlocksPageSection :id="block.settings.anchorLink" :surfaceColor="block.surface" :class="[{[$style.sd_page_section__local]:block.media==null}]">
+  <PageSection :id="block.settings.anchorLink" :surfaceColor="block.surface" :class="[{[$style.sd_page_section__local]:block.media==null}]">
     <div :class="['sd-section-container']">
       <div :class="['sd-grid', 'reversibleGrid', `${props.block.alignment}`]">
         <div
@@ -41,8 +44,8 @@ const componentH = computed(() => {
         </div>
 
         <div :class="[`copyContainer`,componentH]">
-          <BlocksBaseBlocksSingleColumnContent :content="block">
-            <template #default>
+          <SingleColumnContent :content="block">
+            <!-- <template #default>
               <template v-for="button in block.buttons">
                 <PlayVideoButton
                   v-if="button.variant === 'video' && button.videoId"
@@ -63,13 +66,13 @@ const componentH = computed(() => {
                   :target="button.openInNewTab ? '_blank' : ''"
                 />
               </template>
-            </template>
-          </BlocksBaseBlocksSingleColumnContent>
+            </template> -->
+          </SingleColumnContent>
         </div>
       </div>
     </div>
-  </BlocksBaseBlocksPageSection>
-  <Teleport class="teleport" to="body">
+  </PageSection>
+  <!-- <Teleport class="teleport" to="body">
     <Transition name="modal">
       <div v-if="modalOpen">
         <AppModal @closeModal="modalOpen = false" :modalOpen="modalOpen">
@@ -88,7 +91,7 @@ const componentH = computed(() => {
         </AppModal>
       </div>
     </Transition>
-  </Teleport>
+  </Teleport> -->
 </template>
 
 <style module>
