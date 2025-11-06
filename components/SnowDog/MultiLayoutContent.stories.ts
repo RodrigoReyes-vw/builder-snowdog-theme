@@ -1,38 +1,46 @@
 import type { Meta, StoryObj } from "@storybook/vue3";
 
 import MultiLayoutContent from "./MultiLayoutContent.vue";
+import type {TypeWithDeepControls} from "storybook-addon-deep-controls";
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 
-const meta = {
+const meta: Meta<typeof MultiLayoutContent> = {
   title: "Snow Dog /Multi Layout Content",
   component: MultiLayoutContent,
   argTypes: {
     block: {
-      settings: {
-        anchorLink: "multi-layout-content-block",
-      }
-    
-    }
+      control: 'object',
+      description: 'Block configuration object containing all settings',
+    },
   },
   parameters: {
+    deepControls: { enabled: true },
     docs: {
       description: {
         component: `
-##App button docs and some extra music
+## Multi Layout Content Component
+
+A flexible content block component that supports:
+- Text content with optional media
+- Configurable alignment (left/right)
+- Multiple surface colors
+- Rounded or square media
+- Responsive layouts
         `,
       },
     },
   },
   
   tags: ["autodocs"],
-} satisfies Meta<typeof MultiLayoutContent>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   parameters: {
+      deepControls: { enabled: true },
     docs: {
       description: {
         story: `
@@ -71,6 +79,7 @@ This is the standard button variant that should be used for primary actions in t
      
     },
   },
+  argTypes: {}
 };
 
 
