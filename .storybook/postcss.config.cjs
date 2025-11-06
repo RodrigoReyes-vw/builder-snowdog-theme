@@ -7,7 +7,7 @@ const currentDir = dirname(fileURLToPath(import.meta.url));
 module.exports = {
   plugins: [
      "@csstools/postcss-global-data": {
-        files: [join(currentDir, "./assets/css/mq.css")],
+        files: [join(currentDir, "../assets/css/mq.css")],
       },
     postcssPresetEnv({
       browsers: "> 0.2% and not dead",

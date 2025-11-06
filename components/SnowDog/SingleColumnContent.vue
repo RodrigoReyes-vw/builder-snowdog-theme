@@ -9,7 +9,7 @@ const props = defineProps({
   },
   textAlign: {
     type: String,
-    default: "center",
+    default: "left",
   }
 
   
@@ -145,7 +145,7 @@ const headingId = computed(() => {
 .copy,
 .copy * { 
   line-height: 1.75;
-  text-align: center;
+  text-align: left;
   
   font-size: var(--_copySize); 
 }

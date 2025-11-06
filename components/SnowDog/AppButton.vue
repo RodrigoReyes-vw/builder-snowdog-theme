@@ -119,4 +119,9 @@ export default {
   letter-spacing: 0.1em;
 
 }
+@media (--medium) {
+  .navButton{
+  color:lime!important;
+  }
+}
 </style>
