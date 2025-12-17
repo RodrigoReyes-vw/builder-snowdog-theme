@@ -1,0 +1,77 @@
+:root {
+/**
+* *************************************************************************
+Palette
+* *************************************************************************
+*/
+  --sd-color-teal: #00bcb4;
+  --sd-color-orange: #ff8200;
+  --sd-color-black: #000;
+  --sd-color-white: #fff;
+  --sd-color-red: #dc3545;
+  --sd-color-blue: #3b8dde;
+  --sd-color-green: #05ce7c;
+  --sd-color-magenta: #ee44bc;
+  --sd-color-yellow: #fdcd43;
+  --sd-color-light-gray:#F7F7F8;
+  --sd-color-dark-gray:#202020;
+  --sd-color-neutral-20: #f2f2f3;
+  --sd-color-neutral-35: #cbcdcd;
+  --sd-color-neutral-50: #a4a7a8;
+  --sd-color-neutral-65: #7d8182;
+  --sd-color-neutral-80: #575a5b;
+  --sd-color-neutral-95: #323434;
+  --sd-color-primary: var(--sd-color-black);
+  --sd-color-secondary:var(--sd-color-white);
+  --sd-color-accent-1: var(--sd-color-teal);
+  --sd-color-accent-2: var(--sd-color-orange);
+  --sd-color-feedback-error: var(--sd-color-red);
+  --sd-color-required: var(--sd-color-red);
+  --sd-color-feedback-info: var9( --sd-color-blue);
+  --sd-color-feedback-success: var(--sd-color-green);
+  --sd-color-background-light: var(--sd-color-white);
+  --sd-color-background-medium:var(--sd-color-neutral-20);
+  --sd-color-background-dark: var(--sd-color-neutral-95);
+  --sd-color-background-darkest: var(--sd-color-black);
+  --sd-color-background-accent: var(--sd-color-teal);
+  --sd-font-color-primary:var(--sd-color-black);
+  --sd-font-color-primary-on-dark: var(--sd-color-white);
+  --sd-font-color-secondary: var(--sd-color-neutral-80);
+  --sd-font-color-secondary-on-dark: var(--sd-color-neutral-80);
+  --sd-font-color-primary-on-accent: var(--sd-color-white);
+  --main-nav-color: var(--sd-color-white);
+  --main-nav-background: var(--sd-color-black);
+  --main-nav-color: var(--sd-color-white);
+  --main-nav-hover-color: var(--sd-color-teal);
+  /* Surface Colors
+   */
+   --sd-surface-light: var(--sd-color-white);
+  --sd-surface-neutral: var( --sd-color-light-gray);
+  --sd-surface-dark:var(--sd-color-dark-gray);
+  --sd-surface-darkest: var(--sd-color-black);
+  /* section padding */
+  /* FONT Colors */
+  --sd-text-color: var(--sd-color-neutral-80);
+  --sd-text-emphasis: var(--sd-color-black);
+  --sd-text-understate: var(--sd-color-neutral-50);
+  --sd-text-accent: var(--sd-color-teal);
+  /* Font Colors on black */
+  --sd-text-color-on-dark: #c5c5c4;
+  --sd-text-emphasis-on-dark: var(--sd-color-white);
+  --sd-text-understate-on-dark: var(--sd-color-neutral-80);
+  --sd-text-accent-on-dark: var(--sd-color-teal);
+  /* button colors */
+  --sd-button-border-color: var(--sd-color-black);
+  --sd-button-label-color: var(--sd-color-white);
+  --sd-button-background-color: var(--sd-color-black);
+  --sd-button-background-hover-color: var(--sd-color-teal);
+  --sd-button-border-hover-color: var(--sd-color-teal);
+  --sd-button-label-hover-color: var(--sd-color-white);
+  /* ghost button */
+  --sd-button-ghost-background-color: transparent;
+  --sd-button-ghost-label-color: var(--sd-color-black);
+  --sd-button-ghost-border-color: var(--sd-color-black);
+  --sd-button-ghost-background-hover-color: var(--sd-color-black);
+  --sd-button-ghost-label-hover-color: var(--sd-color-white);
+
+}

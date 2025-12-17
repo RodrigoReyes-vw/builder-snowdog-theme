@@ -1,0 +1,39 @@
+:root {
+  --sd-space-100: 8px;
+  /* 2px */
+  --sd-space-025: calc(var(--sd-space-100) / 4);
+  /* 4px */
+  --sd-space-050: calc(var(--sd-space-100) / 2);
+  /* 6px */
+  --sd-space-075: calc(var(--sd-space-100) * 0.75);
+  /* 12px */
+  --sd-space-150: calc(var(--sd-space-100) * 1.5);
+  /* 16px */
+  --sd-space-200: calc(var(--sd-space-100) * 2);
+  /* 24px */
+  --sd-space-300: calc(var(--sd-space-100) * 3);
+  /* 32px */
+  --sd-space-400: calc(var(--sd-space-100) * 4);
+  /* 40px */
+  --sd-space-500: calc(var(--sd-space-100) * 5);
+  /* 48px */
+  --sd-space-600: calc(var(--sd-space-100) * 6);
+  /* 56px */
+  --sd-space-700: calc(var(--sd-space-100) * 7);
+  /* 64px */
+  --sd-space-800: calc(var(--sd-space-100) * 8);
+  /* 72px */
+  --sd-space-900: calc(var(--sd-space-100) * 9);
+  /* 80px */
+  --sd-space-1000: calc(var(--sd-space-1000) * 10);
+  /* 88px */
+  --sd-space-1000: calc(var(--sd-space-1100) * 11);
+  /* 96px */
+  --sd-space-1000: calc(var(--sd-space-1200) * 12);
+  /* 128px */
+  --sd-space-1000: calc(var(--sd-space-1600) * 16);
+}
+
+
+  
+  

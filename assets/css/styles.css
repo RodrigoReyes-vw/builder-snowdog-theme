@@ -1,14 +1,16 @@
 @import url("./reset.css");
 @import url("./fonts.css");
 @import url("./mq.css");
+@import url("./variables/colors.css");
+@import url("./variables/typography.css");
+@import url("./variables/spacing.css");
 @import url("./variables.css");
 @import url("./text-styles.css");
 @import url("./layout.css");
 @import url("./buttons.css");
 @import url("./forms.css");
-/* @import url("./main-content.css"); */
-/* @import url("./media-grid.css"); */
-/* @import url("./quote-single.css"); */
+
+
 @import url("./accordion.css");
 @import url("./table.css");
 @import url("./lists.css");
@@ -16,7 +18,7 @@
 @view-transition {
 	navigation: auto;
 }
-:root {
+:root, .snowDog-container {
   --lighter: #f0f0f0;
   --dark: #213555;
   --blue-l: #4f709c;

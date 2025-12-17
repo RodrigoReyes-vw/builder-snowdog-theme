@@ -67,7 +67,7 @@ const headingId = computed(() => {
     </h3>
     <h2
       v-else-if="content.heading"
-      :class="[$style.heading, 'indexableHeading']"
+      :class="[$style.heading,'sd-heading-level-2', 'indexableHeading']"
     >
       {{ content.heading }}
     </h2>

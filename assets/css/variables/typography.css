@@ -1,0 +1,33 @@
+:root{
+    /**
+* *************************************************************************
+Font size
+* *************************************************************************
+*/
+     --sd-font-size-font-size-0: 0px;
+  --sd-font-size-62: 10px;
+   --sd-font-size-75: 12px;
+  --sd-font-size-81:13px;
+   --sd-font-size-87:14px;
+  --sd-font-size-100: 16px;
+  --sd-font-size-125: 18px;
+  --sd-font-size-150: 24px;
+  --sd-font-size-175: 28px;
+  --sd-font-size-225: 36px;
+  --sd-font-size-300: 48px;
+  --sd-font-size-325: 52px;
+  --sd-font-size-450: 72px;
+  --sd-font-size-575: 92px;
+  --sd-font-char-space-normal: 0;
+  --sd-font-char-space-1x: 0.025em;
+  --sd-font-char-space-2x: 0.05em;
+  --sd-font-char-space-3x: 0.075em;
+  --sd-font-char-space-extended: 0.1em;
+  --sd-font-line-height-normal: 1em;
+  --sd-line-height-1x: 1.125;
+  --sd-line-height-2x: 1.25;
+  --sd-line-height-4x: 1.5;
+  --sd-line-height-6x: 1.75;
+  --sd-line-height-16x: 2;
+  --sd-line-height-20x: 2.5;
+}

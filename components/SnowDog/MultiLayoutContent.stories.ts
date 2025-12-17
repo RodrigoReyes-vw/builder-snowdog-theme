@@ -5,14 +5,12 @@ import type {TypeWithDeepControls} from "storybook-addon-deep-controls";
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 
-const meta: Meta<typeof MultiLayoutContent> = {
+const meta: TypeWithDeepControls<typeof MultiLayoutContent> = {
   title: "Snow Dog /Multi Layout Content",
   component: MultiLayoutContent,
   argTypes: {
-    block: {
-      control: 'object',
-      description: 'Block configuration object containing all settings',
-    },
+   
+   
   },
   parameters: {
     deepControls: { enabled: true },
@@ -36,7 +34,7 @@ A flexible content block component that supports:
 };
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = TypeWithDeepControls<typeof meta>;
 
 export const Primary: Story = {
   parameters: {
@@ -71,15 +69,18 @@ This is the standard button variant that should be used for primary actions in t
         type: "image",
       }       
       ],
-      surfaceColor: "neutral",
+      surface: "neutral",
       
-         heading: "Example Title",
+         heading: "taco",
       content: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a</p>",
      
      
     },
   },
-  argTypes: {}
+  argTypes: { 
+    "block.surface": { control: "select", options: ["neutral", "light",  "dark", "darkest"] },
+    "block.alignment": { control: "select", options: ["left", "right"] },
+  }
 };
 
 
