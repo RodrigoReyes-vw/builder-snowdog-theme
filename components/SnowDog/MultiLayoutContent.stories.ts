@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/vue3";
+import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
 import MultiLayoutContent from "./MultiLayoutContent.vue";
 import type {TypeWithDeepControls} from "storybook-addon-deep-controls";

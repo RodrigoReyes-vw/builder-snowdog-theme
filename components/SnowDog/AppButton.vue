@@ -83,7 +83,7 @@ export default {
   font-family: var(--brand-font);
   font-size: var(--_font-size);
   height: max-content;
-  letter-spacing: var(--sd-font-char-space-3x);
+  letter-spacing: var(--sd-font-char-space-100);
   line-height: var(--sd-font-line-height-normal);
   padding-block: var(--_padding-block);
   padding-inline: var(--_padding-inline);
